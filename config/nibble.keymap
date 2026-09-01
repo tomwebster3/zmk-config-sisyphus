@@ -37,12 +37,12 @@
             display-name = "Default";
 
             /*
-             * Encoder = fine volume: Left -> Shift+Alt+F11 (decrease),
-             *                        Right -> Shift+Alt+F12 (increase).
-             * If your unit turns the wrong way after flashing, just swap
-             * these two bindings.
+             * Encoder = fine volume on macOS. Holding Shift+Alt with the
+             * volume keys makes macOS step by 1/4 increments.
+             * Left -> quieter, Right -> louder.
+             * If your unit turns the wrong way, swap these two bindings.
              */
-            sensor-bindings = <&inc_dec_kp LS(LA(F11)) LS(LA(F12))>;
+            sensor-bindings = <&inc_dec_kp LS(LA(C_VOLUME_DOWN)) LS(LA(C_VOLUME_UP))>;
 
             /*
              * Far-left column below the encoder:
