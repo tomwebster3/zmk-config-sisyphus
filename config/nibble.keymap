@@ -39,10 +39,9 @@
             /*
              * Encoder = fine volume on macOS. Holding Shift+Alt with the
              * volume keys makes macOS step by 1/4 increments.
-             * Left -> quieter, Right -> louder.
-             * If your unit turns the wrong way, swap these two bindings.
+             * Left -> louder, Right -> quieter.
              */
-            sensor-bindings = <&inc_dec_kp LS(LA(C_VOLUME_DOWN)) LS(LA(C_VOLUME_UP))>;
+            sensor-bindings = <&inc_dec_kp LS(LA(C_VOLUME_UP)) LS(LA(C_VOLUME_DOWN))>;
 
             /*
              * Far-left column below the encoder:
@@ -62,7 +61,7 @@
             display-name = "Function";
 
             /* Encoder on the Fn layer = system volume (same direction as base). */
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
             &kp TILDE &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8  &kp F9    &kp F10   &kp F11   &kp F12   &trans   &kp END
